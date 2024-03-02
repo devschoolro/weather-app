@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Aplicatie meteo</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="sidebar">
+        <form id="cityForm" class="city-form">
+          <label for="city">Introduceti orasul</label>
+          <input
+            id="city"
+            type="text"
+            placeholder="Bucuresti, Cluj, Pitesti"
+            required
+          />
+          <button class="btn btn-search">Cauta</button>
+        </form>
+        <div class="separator">
+          <span class="separator-text">sau</span>
+        </div>
+        <button id="locationBtn" class="btn btn-location">
+          Foloseste locatia curenta
+        </button>
+      </div>
+
+      <div class="page-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
